@@ -15,7 +15,6 @@ interface ForecastDay {
   icon: string;
 }
 
-
 interface CityWeather {
   city: string;
   temperature: number;
@@ -24,8 +23,6 @@ interface CityWeather {
   icon: string;
   forecast?: ForecastDay[];
 }
-
-
 
 export default function Home() {
   const [cities, setCities] = useState<CityWeather[]>([]);
